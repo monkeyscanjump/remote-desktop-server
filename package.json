@@ -7,9 +7,16 @@
     "start": "docker compose up --build",
     "down": "docker compose down -v",
     "logs": "docker compose logs -f",
-    "copy-env": "node -e \"require('fs').copyFileSync('.env.local', '.env')\""
+    "gen-env": "bash scripts/gen-env.sh"
   },
-  "keywords": ["guacamole", "docker", "remote-desktop", "mariadb", "cloudflared"],
+  "keywords": [
+    "guacamole",
+    "docker",
+    "remote-desktop",
+    "mariadb",
+    "cloudflared"
+  ],
   "author": "Monkey/What",
-  "license": "MIT"
+  "license": "MIT",
+  "readme": "README.md"
 }
