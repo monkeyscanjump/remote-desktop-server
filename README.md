@@ -68,13 +68,17 @@ You must generate a `.env` file before starting the stack. This project provides
 ### On Linux/macOS (or Windows with Git Bash/MSYS2)
 
 1. **Make the script executable (Linux/macOS only):**
+
    ```bash
    chmod +x scripts/gen-env.sh
    ```
+
 2. **Run the script:**
+
    ```bash
    ./scripts/gen-env.sh
    ```
+
    This will generate a `.env` file based on `.env.local`, randomizing passwords/secrets. All other values (including TUNNEL_TOKEN) are copied as-is from `.env.local`.
 
 ### On Windows (CMD/PowerShell)
